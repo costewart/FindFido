@@ -21,9 +21,21 @@ class List extends Component {
         return (
             <div>
             <input type="text" className ="input" onChange={this.handleChange} placeholder="Search..."/>
-                <ul>
-                    { search.length > 9 && this.state.filtered.map(dog => (<li key={dog}>{dog.Name}||{dog.Breed}||{dog.Color}||{dog.Sex}</li>))}
-                </ul>
+                <table style={{width : '100%'}}>
+                <tr>
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Color</th>
+                    <th>Sex</th>
+                </tr>
+                { search.length > 6 && this.state.filtered.map(dog => (<tr key={dog}>
+                    <td>{dog.Name}</td>
+                    <td>{dog.Breed}</td>
+                    <td>{dog.Color}</td>
+                    <td>{dog.Sex}</td>
+                </tr>))}
+                </table>
+
             </div>
         );
     }

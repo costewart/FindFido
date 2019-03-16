@@ -28,16 +28,16 @@ class App extends Component {
         <div className="row">
         
         <div className="col-xs-3 title-container">
-        <header className="App-header">PET FINDER
+        {/* <header className="App-header">PET FINDER */}
         
-        <header className="App-header2"> <Search /></header>
+        {/* <header className="App-header2"> <Search /></header> */}
         
-        </header>
+        {/* </header> */}
         
         </div>
       
         <div className="col-xs-7 form-container">
-        <h1>Dogs are listed with Name, Breed, Colour and Apparent Sex</h1>
+        <h2>Dogs are listed with Name, Breed, Colour and Apparent Sex</h2>
         <List data = {this.state.data} />
         </div>
       
