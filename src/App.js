@@ -5,6 +5,15 @@ import './App.css';
 import vanCityLogo from '../src/vanCityLogo.png';
 
 class App extends Component {
+  constructor(props) {
+  	super(props);
+  	const data = require('./data.json');
+  	this.state = {
+  		data: data
+  	}
+ 
+
+  }
   render() {
     return (
       <div className="App">
@@ -28,7 +37,8 @@ class App extends Component {
         </div>
       
         <div className="col-xs-7 form-container">
-        <List />
+        <h1>Dogs are listed with Name, Breed, Colour and Apparent Sex</h1>
+        <List data = {this.state.data} />
         </div>
       
       </div>
