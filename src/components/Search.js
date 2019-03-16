@@ -11,7 +11,7 @@ class Search extends Component {
                 <label for="female"> Female </label>
                 <input type="radio" id="male" name="gender" value="Male"/>
                 <label for="male"> Male </label>
-                <button>Find Dog 
+                <button className="App-button">Find Dog 
                 </button>
             </form>
         );

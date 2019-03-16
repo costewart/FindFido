@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import List from './components/List';
 import Search from './components/Search';
 import './App.css';
+import vanCityLogo from '../src/vanCityLogo.png';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <img src={vanCityLogo} alt="logo" width={200} height={100}/>
         
         <div className="wrapper">
         
@@ -17,7 +19,7 @@ class App extends Component {
         <div className="row">
         
         <div className="col-xs-3 title-container">
-        <header className="App-header">Lost and Found 
+        <header className="App-header">PET FINDER
         
         <header className="App-header2"> <Search /></header>
         
