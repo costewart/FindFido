@@ -61,7 +61,7 @@ class List extends Component {
             if(e.target.value !== "") {
                 currentList = this.props.data;
                 newList = currentList.filter(datum => {
-                    const lc = datum.DateCreated.toLowerCase();
+                    const lc = datum.Date.toLowerCase();
                     const filter = e.target.value.toLowerCase();
 
                     return lc.includes(filter);
