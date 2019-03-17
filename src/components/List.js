@@ -20,15 +20,16 @@ class List extends Component {
         console.log('l',search.length);
         return (
             <div>
-            <input type="text" className ="input" onChange={this.handleChange} placeholder="Search..."/>
+            <input type="text" className ="App-input" onChange={this.handleChange} placeholder="yyyy-mm-dd"></input>
+            <button className = "App-button"> Find! </button>
                 <table style={{width : '100%'}}>
-                <tr>
-                    <th>Name</th>
-                    <th>Breed</th>
-                    <th>Color</th>
-                    <th>Sex</th>
+                <tr className = "tableHeading">
+                    <th>NAME</th>
+                    <th>BREED</th>
+                    <th>COLOR</th>
+                    <th>SEX</th>
                 </tr>
-                { search.length > 6 && this.state.filtered.map(dog => (<tr key={dog}>
+                { search.length > 6 && this.state.filtered.map(dog => (<tr key={dog} className="tableContent">
                     <td>{dog.Name}</td>
                     <td>{dog.Breed}</td>
                     <td>{dog.Color}</td>

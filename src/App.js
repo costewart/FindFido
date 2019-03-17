@@ -19,33 +19,23 @@ class App extends Component {
       <div className="App">
       <img src={vanCityLogo} alt="logo" width={200} height={100}/>
         
-        <div className="wrapper">
-        
-        <div className="main">
-
-        <div className="container">
-        
-        <div className="row">
-        
-        <div className="col-xs-3 title-container">
-        {/* <header className="App-header">PET FINDER */}
-        
-        {/* <header className="App-header2"> <Search /></header> */}
-        
-        {/* </header> */}
-        
-        </div>
+      
       
         <div className="col-xs-7 form-container">
-        <h2>Dogs are listed with Name, Breed, Colour and Apparent Sex</h2>
+        <div className="title">FIDO FINDER</div>
+        <div className="blurb"> Dog gone missing? Check our database to see if they are with us! Please enter the date your dog went missing in the format "yyyy-mm-dd" below. </div>
+        <div className="blurb"> <b> Call us at 604-333-333 to reunite with your loved one! </b></div>
+       </div>
+       
+       
+
+        <div className="title2">
         <List data = {this.state.data} />
         </div>
-      
+     
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
+    
+    
     );
   }
 };

@@ -27,6 +27,14 @@
   color: rgb(39, 41, 39);
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 .App-title {
   background-color: coral;
   min-height: 100vh;
@@ -38,16 +46,6 @@
   color: white;
 }
 
-.App-button {
-  background-color:#0082C8; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
 
 .App-link {
   color: #61dafb;
@@ -63,11 +61,82 @@
   margin-block-end: 10px;
 }
 
+.App-columns {
+  column-count: 2;
+}
+
 .form-container {
-padding: 20px;
-background-color: #4CAF50;
-font-size: calc(10px + 2vmin);
+padding-top: 15px;
+padding-bottom: 5px;
+padding-left: 20px;
+background-color:  #0082C8;
 color: white;
+}
+
+.title {
+  font-family: "Verdana", Geneva, sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: left;
+}
+
+.title2 {
+  font-family: "Verdana", Geneva, sans-serif;
+  font-size: 30px;
+  color: white;
+  background-color: #8CC63F;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.blurb {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.App-button {
+  background-color:#0082C8; 
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 21px;
+}
+
+.App-input {
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.blurb2 {
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.tableHeading {
+  font-family: "Verdana", Geneva, sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tableContent {
+  font-family: "Verdana", Geneva, sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 @keyframes App-logo-spin {
